@@ -44,13 +44,26 @@ message(Output:  $${DESTDIR}/$${TARGET})
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    terminalwidget.cpp \
     terminalinputwidget.cpp \
-    terminaloutputwidget.cpp
+    terminaloutputwidget.cpp \
+    qxsysteminfo.cpp \
+    directorywidget.cpp \
+    directoryview.cpp \
+    directoryinfo.cpp \
+    utils.cpp \
+    textpainter.cpp \
+    createdirectorydialog.cpp
 
 HEADERS  += mainwindow.h \
-    terminalwidget.h \
     terminalinputwidget.h \
-    terminaloutputwidget.h
+    terminaloutputwidget.h \
+    qxsysteminfo.h \
+    directorywidget.h \
+    directoryview.h \
+    directoryinfo.h \
+    utils.h \
+    textpainter.h \
+    createdirectorydialog.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    createdirectorydialog.ui

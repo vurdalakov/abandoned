@@ -1,4 +1,4 @@
-#include "TerminalInputWidget.h"
+#include "terminalinputwidget.h"
 
 #include <QKeyEvent>
 
