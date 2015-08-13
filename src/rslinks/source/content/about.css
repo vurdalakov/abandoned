@@ -1,0 +1,25 @@
+#dialog
+{
+	max-height: 400px;
+}
+#header
+{
+	border-bottom: 1px solid #121E48;
+	padding-bottom: 4px;
+	margin-bottom: 4px;
+}
+#title
+{
+	font-size: large;
+	font-weight: bold;
+	color: #121E48;
+}
+#version
+{
+	color: #121E48;
+	font-weight: bold;
+}
+.label
+{
+	font-weight: bold;
+}

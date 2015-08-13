@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+ 
+<prefwindow title="RS Links Options" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+ 
+<prefpane label="Default Action">
+
+  <preferences>
+    <preference id="default-preference" name="rslinks.default" type="int" />
+    <preference id="nolinks-preference" name="rslinks.nolinks" type="bool" />
+  </preferences>
+ 
+  <hbox align="top">
+    <label control="symbol" value="When you double-click the status bar icon:" />
+    <radiogroup preference="default-preference">
+      <radio label="copy RapidShare links to Clipboard" value="0" />
+      <radio label="download RapidShare links" value="1" />
+    </radiogroup>
+  </hbox>
+
+  <hbox align="top">
+    <checkbox preference="nolinks-preference" checked="true" label="Hide RS Links icon when current page does not contain RapidShare links" />
+  </hbox>
+
+  <hbox>
+  </hbox>
+
+</prefpane>
+ 
+</prefwindow>

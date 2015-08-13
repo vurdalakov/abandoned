@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://rslinks/content/rslinks.css" type="text/css"?>
+
+<dialog title="Missing Dependency" chromehidden="menubar toolbar location directories status extrachrome" onload="about_onload()" buttons="accept" xmlns:em="http://www.mozilla.org/2004/em-rdf#" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script type="application/x-javascript" src="common.js"></script>
+
+<label value="Download feature requires that FlashGot add-on is installed." />
+<separator />
+<label value="1. If you don't have FlashGot add-on installed, you can download it from the Firefox web site:" />
+<label value="https://addons.mozilla.org/en-US/firefox/addon/220/" class="link" tooltiptext="Visit FlashGot home page" onclick="rslinks_openPage('https://addons.mozilla.org/en-US/firefox/addon/220/')"/>
+<separator />
+<label value="2. If you have FlashGot add-on installed, check that it is not disabled." />
+<separator />
+<label value="3. If you have FlashGot add-on installed and not disabled, please contact author:" />
+<label value="http://code.google.com/p/rslinks/" class="link" tooltiptext="Visit RS Links home page" onclick="rslinks_openPage('http://code.google.com/p/rslinks/')"/>
+
+</dialog>

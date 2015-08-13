@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://rslinks/content/about.css" type="text/css"?>
+<?xml-stylesheet href="chrome://rslinks/content/rslinks.css" type="text/css"?>
+
+<dialog title="About RS Links" chromehidden="menubar toolbar location directories status extrachrome" onload="about_onload()" buttons="accept" xmlns:em="http://www.mozilla.org/2004/em-rdf#" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script type="application/x-javascript" src="common.js"></script>
+
+<script type="application/x-javascript">
+<![CDATA[
+function about_onload()
+{
+}
+]]>
+</script>
+
+<vbox id="dialog"><vbox flex="1">
+    <hbox>
+        <vbox>
+            <image src="chrome://rslinks/content/about.png" />
+        </vbox>
+        <vbox flex="1">
+            <hbox align="end" id="header">
+                <vbox flex="1">
+                    <label value="RS Links" id="title" />
+                    <label value="Version 0.3.4" id="version" />
+                </vbox>
+            </hbox>
+            <hbox align="end">
+                <vbox>
+                    <label class="label" value="Author:" />
+                    <label class="label" value="Home page:" />
+                </vbox>
+                <vbox>
+                    <label class="link" tooltiptext="Visit author home page" onclick="rslinks_openPage('http://www.vurdalakov.net')" value="Vurdalakov" flex="1" />
+                    <label class="link" tooltiptext="Visit add-on home page" onclick="rslinks_openPage('http://code.google.com/p/rslinks/')" value="http://code.google.com/p/rslinks/" flex="1" />
+                </vbox>
+            </hbox>
+            <separator />
+            <description>Copies to Clipboard or downloads all RapidShare links from the current page with one mouse click.</description>
+            <separator />
+            <hbox align="center">
+                <image src="http://rapidshare.com/img2/bannersmall1.jpg" width="135" height="40" class="link" tooltiptext="Visit RapidShare home page" onclick="rslinks_openPage('http://www.rapidshare.com/')" />
+            </hbox>
+        </vbox>
+    </hbox>
+</vbox></vbox>
+
+</dialog>

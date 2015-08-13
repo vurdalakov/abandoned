@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<overlay id="rslinks" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script type="application/x-javascript" src="common.js"></script>
+  <script type="application/x-javascript" src="rslinks.js"></script>
+
+  <statusbar id="status-bar">
+
+    <popupset>
+      <popup id="rslinks-contextmenu" position="after_start">
+        <menuitem id="rslinks-contextmenu-copy" label="Copy RapidShare links" oncommand="RsLinks.copyLinks()" />
+        <menuitem id="rslinks-contextmenu-download" label="Download RapidShare links" oncommand="RsLinks.downloadLinks()" />
+        <menuseparator />
+        <menuitem id="rslinks-contextmenu-options" label="Options..." oncommand="RsLinks.showOptions()" />
+        <menuitem id="rslinks-contextmenu-about" label="About..." oncommand="RsLinks.showAbout()" />
+      </popup>
+    </popupset>
+    
+    <statusbarpanel id="rslinks-statusbar" class="statusbarpanel-iconic-text" tooltiptext="Copy or download RapidShare links" src="chrome://rslinks/content/statusbar.gif" context="rslinks-contextmenu" ondblclick="if (0 == event.button) RsLinks.defaultAction();"/>
+    
+  </statusbar>
+
+</overlay>

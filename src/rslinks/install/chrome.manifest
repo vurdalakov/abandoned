@@ -1,0 +1,2 @@
+content rslinks jar:rslinks.jar!/content/
+overlay chrome://browser/content/browser.xul chrome://rslinks/content/overlay.xul
