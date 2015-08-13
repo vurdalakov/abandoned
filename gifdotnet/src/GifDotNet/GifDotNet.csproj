@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6B9FE037-A88D-472B-B2F9-92865790EBD8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Vurdalakov.GifDotNet</RootNamespace>
+    <AssemblyName>GifDotNet</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup>
+    <BaseIntermediateOutputPath>$(SolutionDir)..\obj\</BaseIntermediateOutputPath>
+    <BaseOutputPath>$(SolutionDir)..\bin\</BaseOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)$(Configuration)\$(MSBuildProjectName)\</IntermediateOutputPath>
+    <OutputPath>$(BaseOutputPath)$(Configuration)\$(MSBuildProjectName)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)$(Configuration)\$(MSBuildProjectName)\</IntermediateOutputPath>
+    <OutputPath>$(BaseOutputPath)$(Configuration)\$(MSBuildProjectName)\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GifWriter.cs" />
+    <Compile Include="GifBlockEventArgs.cs" />
+    <Compile Include="GifBlockType.cs" />
+    <Compile Include="GifTrailerBlock.cs" />
+    <Compile Include="GifImageDescriptorBlock.cs" />
+    <Compile Include="GifLocalColorTableBlock.cs" />
+    <Compile Include="GifAnimextsLoopingApplicationExtensionBlock.cs" />
+    <Compile Include="GifApplicationExtensionBlock.cs" />
+    <Compile Include="GifBlock.cs" />
+    <Compile Include="GifCommentExtensionBlock.cs" />
+    <Compile Include="GifDisposalMethod.cs" />
+    <Compile Include="GifGlobalColorTableBlock.cs" />
+    <Compile Include="GifGraphicControExtensionBlock.cs" />
+    <Compile Include="GifHeaderBlock.cs" />
+    <Compile Include="GifImage.cs" />
+    <Compile Include="GifLogicalScreenDescriptorBlock.cs" />
+    <Compile Include="GifNetscapeBufferingApplicationExtensionBlock.cs" />
+    <Compile Include="GifNetscapeLoopingApplicationExtensionBlock.cs" />
+    <Compile Include="GifPlainTextExtensionBlock.cs" />
+    <Compile Include="GifReader.cs" />
+    <Compile Include="GifTableBasedImageDataBlock.cs" />
+    <Compile Include="GifExtensionBlock.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>if exist $(ProjectDir)obj\nul rd /s /q $(ProjectDir)obj</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

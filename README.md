@@ -1,10 +1,16 @@
 # Abandoned projects
 
+### GifDotNet
+
+**GifDotNet** is a .NET class library for processing GIF images. Examples include **GifDump**, a console application for dumping GIF file structure.
+
+[More Details](https://github.com/vurdalakov/abandoned/wiki/GifDotNet)&nbsp;&nbsp;&dash;&nbsp;&nbsp;[Source Code](https://github.com/vurdalakov/abandoned/tree/master/gifdotnet)
+
 ### GpAlbum
 
 **GpAlbum** is a program that downloads entire photo album from Google+.
 
-[More Details](https://github.com/vurdalakov/abandoned/wiki/GpAlbum)&nbsp;&nbsp;&dash;&nbsp;&nbsp;[Source Code](https://github.com/vurdalakov/abandoned/tree/master/gpalbum)&nbsp;&nbsp;&dash;&nbsp;&nbsp;[Download Latest](https://github.com/vurdalakov/abandoned/tree/master/gpalbum/bin/gpalbum103.zip)
+[More Details](https://github.com/vurdalakov/abandoned/wiki/GpAlbum)&nbsp;&nbsp;&dash;&nbsp;&nbsp;[Source Code](https://github.com/vurdalakov/abandoned/tree/master/gpalbum)&nbsp;&nbsp;&dash;&nbsp;&nbsp;[Download Latest](https://github.com/vurdalakov/abandoned/raw/master/gpalbum/bin/gpalbum103.zip)
 
 ### MorseMc
 
