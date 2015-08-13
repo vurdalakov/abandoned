@@ -1,0 +1,11 @@
+ <!DOCTYPE RCC><RCC version="1.0">
+ <qresource>
+     <file>resources/binview.icns</file>
+     <file>resources/binview.ico</file>
+     <file>resources/binview016.png</file>
+     <file>resources/binview032.png</file>
+     <file>resources/binview048.png</file>
+     <file>resources/binview064.png</file>
+     <file>resources/binview128.png</file>
+ </qresource>
+ </RCC>

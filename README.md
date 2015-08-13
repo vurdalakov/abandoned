@@ -1,5 +1,11 @@
 # Abandoned projects
 
+### BinView
+
+**BinView** is a multiplatform Qt-based application that displays binary file contents in hexadecimal, octal, decimal and text formats. It is fast and opens files of any size (no 4GB limit) in constant time.
+
+[More Details](https://github.com/vurdalakov/abandoned/wiki/BinView)&nbsp;&nbsp;&dash;&nbsp;&nbsp;[Source Code](https://github.com/vurdalakov/abandoned/tree/master/binview)&nbsp;&nbsp;&dash;&nbsp;&nbsp;[Download Latest](https://github.com/vurdalakov/abandoned/wiki/BinView#downloads)
+
 ### GifDotNet
 
 **GifDotNet** is a .NET class library for processing GIF images. Examples include **GifDump**, a console application for dumping GIF file structure.

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>716</width>
+    <height>538</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>716</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>200</width>
+     <height>22</height>
+    </size>
+   </property>
+   <widget class="QMenu" name="menu_View">
+    <property name="title">
+     <string>&amp;View</string>
+    </property>
+    <widget class="QMenu" name="menu_Bytes_Per_Line">
+     <property name="title">
+      <string>&amp;Bytes Per Line</string>
+     </property>
+     <addaction name="bytesPerLine10"/>
+     <addaction name="bytesPerLine16"/>
+     <addaction name="bytesPerLine20"/>
+     <addaction name="bytesPerLine32"/>
+    </widget>
+    <widget class="QMenu" name="menuOffset">
+     <property name="title">
+      <string>Offset</string>
+     </property>
+     <addaction name="actionOffsetHex"/>
+     <addaction name="actionOffsetDec"/>
+     <addaction name="actionOffsetOct"/>
+     <addaction name="separator"/>
+     <addaction name="actionOffsetNone"/>
+    </widget>
+    <widget class="QMenu" name="menu_Font">
+     <property name="title">
+      <string>&amp;Font</string>
+     </property>
+     <addaction name="actionFontSelect"/>
+     <addaction name="actionFontReset"/>
+    </widget>
+    <widget class="QMenu" name="menu_Radix">
+     <property name="title">
+      <string>&amp;Radix</string>
+     </property>
+     <addaction name="actionRadix16"/>
+     <addaction name="actionRadix10"/>
+     <addaction name="actionRadix8"/>
+    </widget>
+    <addaction name="menu_Font"/>
+    <addaction name="separator"/>
+    <addaction name="menu_Radix"/>
+    <addaction name="menu_Bytes_Per_Line"/>
+    <addaction name="menuOffset"/>
+    <addaction name="actionHexUpper"/>
+   </widget>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <widget class="QMenu" name="menuRecent">
+     <property name="title">
+      <string>R&amp;ecent</string>
+     </property>
+     <addaction name="actionRecentFile"/>
+    </widget>
+    <addaction name="actionOpen"/>
+    <addaction name="menuRecent"/>
+    <addaction name="separator"/>
+    <addaction name="actionReopen"/>
+    <addaction name="actionClose"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menu_Options">
+    <property name="title">
+     <string>&amp;Options</string>
+    </property>
+    <addaction name="actionOpenLastFileAtStartup"/>
+   </widget>
+   <widget class="QMenu" name="menu_Edit">
+    <property name="title">
+     <string>&amp;Edit</string>
+    </property>
+    <addaction name="actionGoto"/>
+   </widget>
+   <widget class="QMenu" name="menu_Help">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="action_About"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menu_Edit"/>
+   <addaction name="menu_View"/>
+   <addaction name="menu_Options"/>
+   <addaction name="menu_Help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="bytesPerLine16">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>16</string>
+   </property>
+  </action>
+  <action name="bytesPerLine32">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>32</string>
+   </property>
+  </action>
+  <action name="actionOffsetNone">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>None</string>
+   </property>
+  </action>
+  <action name="actionOffsetHex">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Hexadecimal</string>
+   </property>
+  </action>
+  <action name="actionOffsetOct">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Octal</string>
+   </property>
+  </action>
+  <action name="actionOffsetDec">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Decimal</string>
+   </property>
+  </action>
+  <action name="bytesPerLine10">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>10</string>
+   </property>
+  </action>
+  <action name="bytesPerLine20">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>20</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionOpenLastFileAtStartup">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Open Last File As Startup</string>
+   </property>
+   <property name="toolTip">
+    <string>Open Last File At Startup</string>
+   </property>
+  </action>
+  <action name="actionFontSelect">
+   <property name="text">
+    <string>&amp;Select...</string>
+   </property>
+  </action>
+  <action name="actionFontReset">
+   <property name="text">
+    <string>Reset to Courier</string>
+   </property>
+  </action>
+  <action name="actionHexUpper">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show Hexadecimal Digits In Upper Case</string>
+   </property>
+  </action>
+  <action name="actionGoto">
+   <property name="text">
+    <string>&amp;Go To...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+G</string>
+   </property>
+  </action>
+  <action name="actionRadix16">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Hexadecimal</string>
+   </property>
+  </action>
+  <action name="actionRadix10">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Decimal</string>
+   </property>
+  </action>
+  <action name="actionRadix8">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Octal</string>
+   </property>
+  </action>
+  <action name="action_About">
+   <property name="text">
+    <string>&amp;About...</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>E&amp;xit</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+X</string>
+   </property>
+  </action>
+  <action name="actionReopen">
+   <property name="text">
+    <string>&amp;Reopen</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionRecentFile">
+   <property name="text">
+    <string>File</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>&amp;Close</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
