@@ -1,6 +1,6 @@
 # Abandoned projects
 
-##### RsLinks
+### RsLinks
 
 **RsLinks** is a Firefox add-on that copies to Clipboard or downloads all RapidShare links from the current page with one mouse click. It also strikes out broken RapidShare links and shows number of valid and broken RapidShare links in the Firefox statusbar.
 
