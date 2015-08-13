@@ -1,5 +1,11 @@
 # Abandoned projects
 
+## MorseMc
+
+**Morse MC** is program that uses [Microsoft Office Communicator 2007 or Microsoft Lync](http://en.wikipedia.org/wiki/Microsoft_Lync) status to transmit messages in Morse code. 
+
+[More Details](https://github.com/vurdalakov/abandoned/wiki/MorseMc)&nbsp;&nbsp;&dash;&nbsp;&nbsp;[Source Code](https://github.com/vurdalakov/abandoned/tree/master/morsemc)
+
 ### QNC
 
 **QNC** is a multiplatform Qt-based shell application.

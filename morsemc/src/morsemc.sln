@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "morsemc", "morsemc.csproj", "{1C086F85-9CB3-4F43-9C38-2BC6FB632A4C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Offline|Any CPU = Offline|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C086F85-9CB3-4F43-9C38-2BC6FB632A4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C086F85-9CB3-4F43-9C38-2BC6FB632A4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C086F85-9CB3-4F43-9C38-2BC6FB632A4C}.Offline|Any CPU.ActiveCfg = Offline|Any CPU
+		{1C086F85-9CB3-4F43-9C38-2BC6FB632A4C}.Offline|Any CPU.Build.0 = Offline|Any CPU
+		{1C086F85-9CB3-4F43-9C38-2BC6FB632A4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C086F85-9CB3-4F43-9C38-2BC6FB632A4C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
